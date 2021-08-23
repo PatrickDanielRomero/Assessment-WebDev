@@ -1,0 +1,411 @@
+body {
+	margin: auto 0;
+    background: #FFFFFF; /* Old browsers */
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #4F3464 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#4F3464)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #FFFFFF 0%,#4F3464 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #FFFFFF 0%,#4F3464 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #FFFFFF 0%,#4F3464 100%); /* IE10+ */
+    background: linear-gradient(top, #FFFFFF 0%,#4F3464 100%); /* W3C */
+}
+
+
+
+.zone {
+    /*padding:30px 50px;
+    margin:40px 60px;*/
+    cursor:pointer;
+    /*display:inline-block;*/
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.violet {
+    background: #2C2133; /* Old browsers */
+    background: -moz-linear-gradient(top, #2C2133 0%, #4F3464 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2C2133), color-stop(100%,#4F3464)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #2C2133 0%,#4F3464 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #2C2133 0%,#4F3464 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #2C2133 0%,#4F3464 100%); /* IE10+ */
+    background: linear-gradient(top, #2C2133 0%,#4F3464 100%); /* W3C */
+}
+
+.container {
+    padding: 0;
+    margin-bottom: 5px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    padding-top: 130px;
+    width: 20%;
+    transition: 2s;
+    background: #FFFFFF;
+}
+
+.slide img {
+    width: 40%;
+    padding-left: 240px ;
+    height: 300px;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #7D53AB;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px ;
+}
+
+.manual-btn:hover {
+    background: #7D53AB;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div {
+    border: 2px solid #7D53AB;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: #7D53AB;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: #7D53AB;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: #7D53AB;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: #7D53AB;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0;
+}
+
+.push {
+    margin-left: auto;
+    padding-right: 20px;
+}
+
+.push fa-shopping-cart {
+    vertical-align: middle; 
+    font-size: 20px;
+    color: white;
+}
+
+.push a {
+    background-color: #F13657;
+    border-radius: 8px;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+li {
+    padding: 20px 0px 20px 0px;
+}
+
+
+
+.content-section {
+    margin: 1em;
+    background: #765296;
+    background: -moz-linear-gradient(top, #765296 0%, #B673E1 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#B673E1)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #765296 0%,#B673E1 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #765296 0%,#B673E1 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #765296 0%,#B673E1 100%); /* IE10+ */
+    background: linear-gradient(top, #765296 0%,#B673E1 100%); /* W3C */
+    border-radius: 30px;
+    padding-bottom: 100px;
+}
+
+.container-two {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+.btn-primary {
+    color: white;
+    background-color: #463BBA;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+.shop-item {
+    margin: 0px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-top: 15PX;
+}
+
+.shop-item-image {
+    height: 190px;
+}
+
+.shop-item-image:hover {
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 5px;
+
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #FFFFFF;
+}
+
+.shop-items {
+    /*display: flex;
+    flex-wrap: wrap;
+    justify-content: center;*/
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.main-nav a {
+    text-decoration: none;
+}
+
+.design2 {
+    color: white;
+}
+
+.design {
+    color: royalblue;
+}
+
+.bg-modal {
+    width: 100%;
+    height: 220%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-content {
+    width: 800px;
+    height: 400px;
+    background-color: white;
+    border-radius: 4px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 25px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.products-container {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.products-container fa-times-circle {
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products img {
+    width: 75px;
+}
+
+.product-header {
+    padding-top: 5px;
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin: 0 auto;
+}
+
+.product-title {
+    padding-left: 13px;
+    width: 45%;
+}
+
+.price {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.quantity {
+    width: 30%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+}
+
+.total {
+    width: 10%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    width: 20%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgrey;
+    margin-left: 80px ;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 30%;
+}
+
+.basketTotal {
+    width: 10%;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Basic Web Dev Assessment</title>
+
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,800&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<nav class="zone violet">
+		<ul class="main-nav">
+			<li class="design2">My</li>
+			<li class="design">Shop</li>
+			<li class="push">
+				<a href="#" id="cart-btn">
+					<i class="fas fa-shopping-cart" name="basket"></i> Cart <span>0</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+	<!--CAROUSEL-->
+
+	<div class="container">
+		<div class="slider">
+			<div class="slides">
+
+				<input type="radio" name="radio-btn" id="radio1">
+				<input type="radio" name="radio-btn" id="radio2">
+				<input type="radio" name="radio-btn" id="radio3">
+				<input type="radio" name="radio-btn" id="radio4">
+
+				<div class="slide first">
+					<img src="item1.jpg" alt="">
+				</div>
+				<div class="slide">
+					<img src="item2.jpg" alt="">
+				</div>
+				<div class="slide">
+					<img src="item3.jpg" alt="">
+				</div>
+				<div class="slide">
+					<img src="item4.jpg" alt="">
+				</div>
+
+				<div class="navigation-auto">
+					<div class="auto-btn1"></div>
+					<div class="auto-btn2"></div>
+					<div class="auto-btn3"></div>
+					<div class="auto-btn4"></div>
+				</div>
+			</div>
+			<div class="navigation-manual">
+				<label for="radio1" class="manual-btn"></label>
+				<label for="radio2" class="manual-btn"></label>
+				<label for="radio3" class="manual-btn"></label>
+				<label for="radio4" class="manual-btn"></label>	
+			</div>
+		</div>
+		
+	</div>
+
+	<!--SHOPPING LIST-->
+
+  <section class="container-two content-section">
+	<div class="shop-items">
+		<div class="shop-item">
+			<span class="shop-item-title">iPhone 12</span>
+			<img class="shop-item-image" src="shop1.png">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$829</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">iPhone 12 mini</span>
+            <img class="shop-item-image" src="shop2.png">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$729.99</span>
+            <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">iPhone 12 Pro</span>
+            <img class="shop-item-image" src="shop3.png">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$999</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">iPhone 12 Pro Max</span>
+            <img class="shop-item-image" src="shop4.png">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$1,099</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-item">
+			<span class="shop-item-title">iPhone 11</span>
+			<img class="shop-item-image" src="shop5.png">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$447.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">iPhone SE (2020)</span>
+            <img class="shop-item-image" src="shop6.png">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$268.98</span>
+            <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">iPhone 11 Pro</span>
+            <img class="shop-item-image" src="shop7.png">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$624.95</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">iPhone 11 Pro Max</span>
+            <img class="shop-item-image" src="shop8.png">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$685.50</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">iPhone XS</span>
+            <img class="shop-item-image" src="shop9.png">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$278.59</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+    
+
+
+
+    </div>
+  </section>
+
+	<div class="bg-modal">
+		<div class="modal-content">
+			<div class="close">+</div>
+
+			<div class="products-container">
+				<div class="product-header">
+					<h5 class="product-title">PRODUCT</h5>
+					<h5 class="price">PRICE</h5>
+					<h5 class="quantity">QUANTITY</h5>
+					<h5 class="total">TOTAL</h5>
+				</div>	
+			</div>
+			<div class="products">
+				
+			</div>
+
+		</div>
+	</div>       
+
+
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="modal.js"></script>
+</body>
+</html>
